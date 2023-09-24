@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Contato</title>
+    <style>
+        Body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, rgb(19, 85, 85), rgb(12, 155, 160));
+        }
+
+        div{
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 85px;
+            border-radius: 15px;
+            color: #ffffff;
+        }
+
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+        }
+
+        .btn-enviar{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-voltar{
+            right: 5%;
+            top: 90%;
+            position: absolute;
+        }
+
+        a{
+          color: #141414;
+          
+        }
+
+        a:active{
+            text-decoration: none;
+
+        }
+
+        .mensagem{
+            height: 55px;
+        }
+
+        .mensagem::placeholder{
+           top: 10%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Contato</h1>
+        <input type="email" placeholder="Email" required>
+        <br><br>
+        <input type="text" placeholder="Assunto" required>
+        <br><br>
+        <input class="mensagem" type="text" placeholder="Mensagem" required>
+        <br><br>
+        <button class="btn-enviar">Enviar</button>
+        <br><br>
+        <button class="btn-voltar"><a href="index.html">Voltar</a></button>
+    </div>
+
+</body>
+</html>
